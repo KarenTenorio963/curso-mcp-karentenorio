@@ -1,26 +1,22 @@
 [project]
-name = "curso-mcp-karentenorio"
+name = "mi-proyecto-speckit"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "KarenTenorio963", email = "karen.tenorio@epn.edu.ec" }
 ]
-requires-python = ">=3.12"
-dependencies = [
-    "google-genai>=2.22.0",
-    "python-dotenv>=1.2.3",
-    "rich>=15.0.0",
-]
+requires-python = ">=3.14"
+dependencies = []
 
 [project.scripts]
-curso-mcp-karentenorio = "curso_mcp_karentenorio:main"
+mi-proyecto-speckit = "mi_proyecto_speckit:main"
 
 [build-system]
 requires = ["uv_build>=0.12.7,<0.13.0"]
 build-backend = "uv_build"
 
-[tool.uv.workspace]
-members = [
-    "entregas/s4/clase-sdd",
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
 ]
