@@ -25,3 +25,8 @@ members = [
     "entregas/s4/clase-sdd",
     "entregas/s6p5/proyecto-curso-karentenorio",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest-cov>=7.1.0",
+]
